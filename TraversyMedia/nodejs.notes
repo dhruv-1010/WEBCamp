@@ -1,0 +1,32 @@
+node.js is not a framework its a runtime.
+built on V8 engine  
+learn basic of js 
+-->HTTP-->JSON[data types]-->Arrow functions-->Promises-->MVCpattern[model view pattern]
+fast efficient 
+event driven non blocking IO model
+convert js for front end and back end as well
+work on single
+support concurrent conenctions like 10000 users at single time
+asynchronous               event loop 
+                           __________
+                          /             \
+                          |             \
+event emitters -----> events            |-----> {event handlers}
+                           \           /
+                            \_________/
+    not for CPU intensive
+    RESTAPI and microservices
+    Real time chatrooms,blogs
+    CRUD apps - blogs,shopping carts,social networks
+    tools and utilities
+ npm manager
+ -->install modules like pip
+ -->/node_modules//stores new modules here
+--->/package.json//stores dependencies of project
+---> npm scripts can be created to run certain simple tasks//
+npm init //create dependencies
+npm install something
+npm install -g globally something
+
+
+modules --> contain some works v 
