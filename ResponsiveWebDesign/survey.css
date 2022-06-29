@@ -3,7 +3,7 @@
     padding:0;
 }
 body {
-    background-image:url(/ResponsiveWebDesign/BACK.jpg);
+    background-image:linear-gradient(115deg, #003cff8e,#ff2b06b9),url(/BACK.jpg);
 }
 #title{
     margin-left:auto;
@@ -23,11 +23,15 @@ body {
 
 }
 .groups{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
+    
     font-size:22px;
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }   
+.input-checkbox{
+    float: right;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+}
