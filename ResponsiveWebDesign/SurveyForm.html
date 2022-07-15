@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,99 +7,114 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="survey.css" type="text/css">
 </head>
+<h1 id="title">Follow UP Survey</h1>
+
+<div id="form">
+    <p id="description">
+        Follow Up Form for the Night Changes Concert ...
+    </p>
+
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+
+        <div class="parents">
+            <div class="labels">
+                <label id="name-label" for="name">Enter Your Name</label>
+            </div>
+            <div class="elements">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+                    required>
+            </div>
+        </div>
+
+        <br>
+        <div class="parents">
+            <div class="labels">
+                <label id="email-label" for="email"> Your Email </label>
+            </div>
+            <div class="elements">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+            </div>
+        </div>
+
+        <br>
+        <div class="parents">
+            <div class="labels">
+                <label id="number-label" for="number">And your Number</label>
+            </div>
+            <div class="elements">
+                <input type="number" name="number" id="number" min="1" max="100" class="input-field"
+                    placeholder="Enter your number (1 - 100)">
+            </div>
+        </div>
 
 
-<body>
-    <header>
-        <h1 id="title">Student Response Form</h1>
-        <p id="description">Please fill out the following additional support form</p>
-    </header>
-    <main>
-          <form action="backend.php" id="survey-form">
-                <form id="survey-form">
-                    <div class="groups">
-                        <label id="name" for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-central-command" placeholder="Enter your name"
-                            required />
-                    </div>
-                    <div class="groups">
-                        <label id="email" for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-central-command" placeholder="Enter your Email"
-                            required />
-                    </div>
-                    <div class="groups">
-                        <label id="number" for="number">Age<span class="clue">(optional)</span></label>
-                        <input type="number" name="age" id="number" min="10" max="99" class="form-central-command"
-                            placeholder="Age" />
-                    </div>
-                    <div class="groups">
-                        <p>Which option best describes your current role?</p>
-                        <select id="dropdown" name="role" class="form-central-command" required>
-                            <option disabled selected value>Select current role</option>
-                            <option value="student">Student</option>
-                            <option value="job">Full Time Job</option>
-                            <option value="learner">Full Time Learner</option>
-                            <option value="preferNo">Prefer not to say</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
+        <br>
+        <div class="parents">
+            <div class="labels">
+                <label for="DropD">What was your favourite Song?</label>
+            </div>
+            <div class="elements">
+                <select id="dropdown" name="DropD" class="dropdown">
+                    <option disabled value>Select Favourite Color</option>
+                    <option value="blue">Blue Lagoon</option>
+                    <option value="black">Black Hearts</option>
+                    <option value="red">Red Devil</option>
+                    <option value="green">Green Meadows</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+        </div>
 
-             <div class="groups">
-                        <p>What was your favourite part of our Community?</p>
-                        <select id="liked" name="liked" class="form-central-command" required>
-                            <option disabled selected value>Select an Option</option>
-                            <option value="People">People</option>
-                            <option value="projects">Projects</option>
-                            <option value="community">Community</option>
-                            <option value="Assignments">Assignments</option>
-                            <option value="Creativity">Creativity</option>
-                        </select>
-                    </div>
+        <br>
+        <div class="parents">
+            <div class="labels">
+                <label for="Rating">* Do you like our Concert?</label>
+            </div>
+            <div class="elements">
+                <ul>
+                    <li class="radio"><label>Will come next time<input name="radio-buttons" value="1" type="radio"
+                                class="Rating"></label></li>
+                    <li class="radio"><label>If i am not busy<input name="radio-buttons" value="2" type="radio"
+                                class="Rating"></label></li>
+                    <li class="radio"><label>I am going<input name="radio-buttons" value="3" type="radio"
+                                class="Rating"></label></li>
+                </ul>
+            </div>
+        </div>
 
-                    <div class="groups">
-                        <p>
-                            What would you like to see improved?
-                            <span class="clue">(Check all that apply)</span>
-                        </p>
+        <!-- Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+        <div class="parents">
+            <div class="labels">
+                <label for="preferences">Things you would like to see improved<br>(Leave unchecked if the concert
+                    is good as it is): </label>
+            </div>
+            <div class="elements">
+                <ul id="preferences">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox"
+                                class="Rating">More Metal</label></li>
+                    <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="Rating">
+                        More Swags</li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="Rating">More Funk</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox"
+                                class="Rating">No Guards</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox"
+                                class="Rating">More More More </label></li>
+                </ul>
+            </div>
+        </div>
 
-                        <label><input name="prefer" value="front-end-projects" type="checkbox"
-                                class="input-checkbox" />Front-end Projects</label>
-                        <label>
-                            <input name="prefer" value="back-end-projects" type="checkbox"
-                                class="input-checkbox" />Back-end Projects</label>
-                        <label><input name="prefer" value="data-visualization" type="checkbox"
-                                class="input-checkbox" />Data Visualization</label>
-                        <label><input name="prefer" value="challenges" type="checkbox"
-                                class="input-checkbox" />Challenges</label>
-                        <label><input name="prefer" value="open-source-community" type="checkbox"
-                                class="input-checkbox" />Open Source Community</label>
-                        <label><input name="prefer" value="gitter-help-rooms" type="checkbox"
-                                class="input-checkbox" />Gitter help rooms</label>
-                        <label><input name="prefer" value="videos" type="checkbox"
-                                class="input-checkbox" />Videos</label>
-                        <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City
-                            Meetups</label>
-                        <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
-                        <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
-                        <label><input name="prefer" value="additional-courses" type="checkbox"
-                                class="input-checkbox" />Additional Courses</label>
-                    </div>
+        <div class="parents">
+            <div class="labels">
+                <label for="comments">Anything for you favourite SuperStars</label>
+            </div>
+            <div class="elements">
+                <textarea id="comments" class="input-field"  name="comment"
+                    placeholder="Spread Your Love Here ............ "></textarea>
+            </div>
+        </div>
 
-                    <div class="groups">
-                        <p>Any comments or suggestions?</p>
-                        <textarea id="comments" class="input-textarea" name="comment"
-                            placeholder="Enter your comment here..."></textarea>
-                    </div>
-                    <div class="groups">
-                        <button type="submit" id="submit" class="submit-bn">
-                          Submit
-                        </button>
-
-                </form>
-
-    </main>
-
-
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
 </body>
-
 </html>

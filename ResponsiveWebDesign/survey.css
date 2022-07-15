@@ -1,37 +1,29 @@
-*{
-    margin:0;
-    padding:0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-body {
-    background-image:linear-gradient(115deg, #003cff8e,#ff2b06b9),url(/BACK.jpg);
-}
-#title{
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 49px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
-    text-align:center;
-}
-#description{
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 19px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body{
+    background-image: linear-gradient(
+      115deg,
+      rgba(158, 58, 18, 0.8),
+      rgba(36, 16, 196, 0.7)
+    ),
+    url(https://i.ytimg.com/vi/syFZfO_wfMQ/maxresdefault.jpg);
     color:white;
-    text-align:center;
+    font-size:17px;
+    background-repeat: no-repeat;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    justify-content: center;
 
 }
-.groups{
-    
-    font-size:22px;
-    color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}   
-.input-checkbox{
-    float: right;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
+#comments{
+    height:50px;
+    resize:vertical;
 }
+ul{
+    list-style: none;
+}
+
