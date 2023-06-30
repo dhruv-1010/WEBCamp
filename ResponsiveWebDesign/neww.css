@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size:1.5rem;
+}
+.container{
+    background:#333;
+}
+.container .list{
+    display:flex;
+    list-style:none;
+}
+.container .list .list-item{
+    padding:30px;
+}
+.container .list a{
+    text-decoration: none;
+    color:white;
+}
+.container .list a:hover{
+    background-color:white;
+    color:#333;
+    cursor:pointer;
+    border:2px solid yellow;
+}
