@@ -16,7 +16,7 @@
     flex-direction: row;
 }
 #header-img {
-  height: 95px;
+  height: 25vh;
   width: auto;
   margin-right:15px;
 }
@@ -36,10 +36,8 @@ ul {
     top:30%;
     justify-content: center;
 }
-.base_img{
-    margin:0 15%;
-    height:55%;
-    width:55%;
+img{
+  height: 25vh;
 }
 .illustration{
     height:auto;
